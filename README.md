@@ -20,3 +20,10 @@ The generator consists of stack of residual layers to upsample the latent input 
 The discriminator consists also of stack of residual layers but it downsample the image and then a dense layer is added to judge the realisticity of the image. The archeticture of the discriminator is shown in the following image
 
 ![image](https://user-images.githubusercontent.com/47930821/130739428-61ee148e-96eb-456a-bc7d-b628d7865b5d.png)
+
+# Spectral-Norm penalization
+In the discriminator, the spectral norm penalization is applied. Usually in deep learning, it is harmful to let the model lean on a small subset of weights. Therefore weight regularization is sometimes essential. However directly penalizing the weights may restrict the learning process. Thus, instead of penalizing weights, the highest eigen value of the weights is penalized instead. Thus, it prevents the space of the weight matrix to be oriented in one specific direction.
+
+Pros: it helps stabilize the training, since the over-trained discriminator makes the generator diverge during the training
+Cons: it makes the training slower
+
