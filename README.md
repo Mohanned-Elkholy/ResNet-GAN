@@ -25,5 +25,26 @@ The discriminator consists also of stack of residual layers but it downsample th
 In the discriminator, the spectral norm penalization is applied. Usually in deep learning, it is harmful to let the model lean on a small subset of weights. Therefore weight regularization is sometimes essential. However directly penalizing the weights may restrict the learning process. Thus, instead of penalizing weights, the highest eigen value of the weights is penalized instead. Thus, it prevents the space of the weight matrix to be oriented in one specific direction.
 
 Pros: it helps stabilize the training, since the over-trained discriminator makes the generator diverge during the training
+
 Cons: it makes the training slower
+
+---
+# Prerequisites
+1- python3 
+
+2- CPU or NVIDIA GPU (GPU is recommended for faster inversion)
+
+---
+# Install dependencies
+In this repo, a pretrained biggan in a specified library
+```python
+pip install torch torchvision matplotlib lpips numpy nltk cv2 pytorch-pretrained-biggan
+```
+---
+# Training
+#provide image to work on
+```python
+python train.py  --num_epochs 2000 --learning_rate 0.007 
+```
+---
 
