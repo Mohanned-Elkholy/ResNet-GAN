@@ -43,12 +43,7 @@ You can learn more about FID metric here (https://arxiv.org/abs/1706.08500)
 2- CPU or NVIDIA GPU (GPU is recommended for faster inversion)
 
 ---
-# Install dependencies
-In this repo, a pretrained biggan in a specified library
-```python
-pip install torch torchvision matplotlib lpips numpy nltk cv2 pytorch-pretrained-biggan
-```
----
+
 # Training
 Run this script on a colab notebook to start the training. (GPU is required).
 Upload this folder in a specified location and write its path in dataset_path: https://drive.google.com/drive/folders/1Fl3UlXUyZ5PhLl_31nQ7kTredhvmi8uQ?usp=sharing
