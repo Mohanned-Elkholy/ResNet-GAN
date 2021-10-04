@@ -50,9 +50,17 @@ pip install torch torchvision matplotlib lpips numpy nltk cv2 pytorch-pretrained
 ```
 ---
 # Training
-#provide image to work on
+Run this script on a colab notebook to start the training. (GPU is required).
+Upload this folder in a specified location and write its path in dataset_path: https://drive.google.com/drive/folders/1Fl3UlXUyZ5PhLl_31nQ7kTredhvmi8uQ?usp=sharing
 ```python
-python train.py  --num_epochs 2000 --learning_rate 0.007 
+!pip install argparse
+!git clone https://github.com/Mohanned-Elkholy/ResNet-GAN
+%cd /content/ResNet-GAN
+!python main.py --dataset_path "put the path of the dataset folder here" --GAN_check_point_path '/' --outputs '/content/drive/MyDrive/For_Jacob/Githubs/Resnet_GAN/outputs' --continue_training_from_checkpoint False
+
 ```
+You can also run the colab notebook provided in the repo, or you can open this link: https://colab.research.google.com/drive/1wJrPeNv7sx8s0s5jCF9XNxW9TmAG6QOO?usp=sharing.
+
+---
 ---
 
