@@ -54,7 +54,7 @@ Upload this folder in a specified location and write its path in dataset_path: h
 !python main.py --dataset_path "put the path of the dataset folder here" --GAN_check_point_path '/' --outputs '/content/drive/MyDrive/For_Jacob/Githubs/Resnet_GAN/outputs' --continue_training_from_checkpoint False
 
 ```
-You can also run the colab notebook provided in the repo, or you can open this link: https://colab.research.google.com/drive/1wJrPeNv7sx8s0s5jCF9XNxW9TmAG6QOO?usp=sharing.
+You can also run the colab notebook provided in the repo, or you can open this link: https://colab.research.google.com/drive/1rX0yPS4Vk_XgiIAkhTbbdXSRGZjpwiGa.
 
 ---
 ---
